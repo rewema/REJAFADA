@@ -6,6 +6,10 @@
     Scientific Reports - Nature 12, 1945 (2022). 
     https://doi.org/10.1038/s41598-022-05921-5
     
+## How to use our dataset in Matlab
+
+[TrainingTime, TestingTime, TrainingAccuracy, TestingAccuracy] = ['MLP'](https://github.com/refade/Artificial-intelligence-based-antivirus-in-order-to-detect-malware-preventively/blob/main/MLP.m)(['Antivirus_Dataset_Jar.mat'](https://github.com/rewema/REJAFADA/blob/master/Antivirus_Dataset_Jar.zip), 1, 500, 'traincgb', 0)
+
 ## Limitation of Commercial Antivirus
 
 Although it has been questioned for more than a decade, the modus operandi of antiviruses is based on signatures when the suspect file is consulted on datasets named blacklist. Therefore, it is enough that the hash of the investigated file not to be in the blacklist of the antivirus in order to malware not to be detected. The hash functions as a unique identifier for a given file. Then, given the limitations of commercial antiviruses, it is not a difficult task to develop and to distribute variants of a malicious application. To do this, it is enough to make small alterations in the original malware with routines that, effectively, do not have any usefulness like repetition loops and conditional branches without instructions in their scopes. These alterations without usefulness, however, they turn the hash of the modified malware different from the hash of the original malware. Consequently, malware, incremented with null routines, will not be detected by the antivirus which cataloged the original malware. It should to emphasize the existence of botnets responsible for creating and distributing, in automated form, variants of a same original malware. It is concluded that antiviruses, based on signatures, have null effectiveness when submitted to variants of a same malware.
